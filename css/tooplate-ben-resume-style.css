@@ -543,7 +543,7 @@ https://www.tooplate.com/view/2120-ben-resume
   .social-links a:hover {
     color: var(--dark-color);
   }
-/* Mon COde a moi */
+/* Mon COde a moi  /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Custom gray divider */
 .divider {
@@ -551,6 +551,20 @@ https://www.tooplate.com/view/2120-ben-resume
   
 }
 
+.photoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #f8f9fa;
+}
+.photoSection img {
+  max-width: 60%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
   .videoSection{
     display: flex;
     justify-content: center;

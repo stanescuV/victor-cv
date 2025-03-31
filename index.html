@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css" />
@@ -173,59 +178,62 @@ https://www.tooplate.com/view/2120-ben-resume
 
     <section id="projects">
       <!-- First Project: Site E-Commerce -->
-      <div
-        class="container d-flex align-items-center justify-content-center mt-2 mb-4"
-      >
+      <div class="container d-flex mt-2 mb-4">
         <div class="text-center">
           <h3>Site E-Commerce</h3>
-          <p class="w-75 mx-auto">
+          <p class="w-80 mx-auto mt-3">
             Création d'un site e-commerce complet avec
             <strong>React</strong> et <strong>Node</strong>, intégrant
             <strong>Stripe</strong> pour les paiements,
             <strong>Firebase</strong> pour l'authentification et
-            <strong>PostgreSQL</strong> pour la gestion des données.
+            <strong>PostgreSQL</strong> pour la base de données.<br />
+            J'ai aussi utilisé <strong> Material UI</strong> comme librairie
+            principale.
           </p>
+        </div>
+        <div class="videoSection mb-4">
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/s1HLphwhN7c"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
 
       <!-- Video Section for Site E-Commerce -->
-      <div class="videoSection mb-4">
-        <iframe
-          width="700"
-          height="400"
-          src="https://www.youtube.com/embed/cQ1KIoUb4u8"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
 
       <!-- Divider between projects -->
       <hr class="divider" />
 
       <!-- Second Project: ChatBot Avocat -->
-      <div
-        class="container d-flex align-items-center justify-content-center mt-4 mb-4"
-      >
+      <div class="container d-flex mt-4 mb-4">
+        <!-- Image for ChatBot Avocat -->
+        <div class="container text-center mb-4">
+          <div class="images">
+            <img
+              src="/images/ChatBot.png"
+              alt="Crocodile Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/ChatBot.png')"
+            />
+          </div>
+        </div>
         <div class="text-center">
           <h3>ChatBot Avocat</h3>
-          <p class="w-75 mx-auto">
-            Développement d'un chatbot juridique avancé en
-            <strong>Python</strong>, intégrant <strong>Flask</strong> pour
-            l'architecture backend, l'API <strong>OpenAI</strong> pour l'analyse
-            du langage et <strong>Milvus</strong> pour l'indexation des données.
+          <p class="w-80 mx-auto mt-3">
+            Développement d'un chatbot juridique avancé qui répond à toute
+            question sur le droit penal.
+            <br />Téchnologies utilisées : <strong>Flask</strong> avec
+            <strong>Python</strong> pour l'architecture backend, l'API
+            <strong>OpenAI</strong> pour l'analyse du langage et
+            <strong>Milvus</strong> pour l'indexation des données (base de
+            données vectorielle).
           </p>
-        </div>
-      </div>
-
-      <!-- Image for ChatBot Avocat -->
-      <div class="container text-center mb-4">
-        <div class="images">
-          <img
-            src="/images/ChatBot.png"
-            class="img-fluid"
-            alt="ChatBot Image"
-          />
         </div>
       </div>
 
@@ -233,142 +241,140 @@ https://www.tooplate.com/view/2120-ben-resume
       <hr class="divider" />
 
       <!-- Third Project: WebApp Kahoot/Mentimeter -->
-      <div class="text-center mt-4 mb-4">
+      <div class="container text-center mt-4 mb-4">
         <h3>WebApp Kahoot/Mentimeter</h3>
-        <p class="w-50 mx-auto">
+        <p class="mx-auto col-md-8 mt-3">
           Développement d'une webapp similaire à <strong>Kahoot</strong> /
           <strong>Mentimeter</strong>, utilisant
           <strong>WebSockets</strong> pour la communication en temps réel,
           <strong>Node</strong> pour le backend, <strong>React</strong> pour
           l'interface utilisateur et <strong>Firestore NoSQL</strong> pour la
           gestion des données.
+          <br />
+          De loin le projet le plus compliqué que j'ai réalisé.
+          <br />
+          - Une communication bilatérale en temps réel via WebSockets.
+          <br />
+          - Des differents calls asynchrones des APIs (Firebase, Firestore,
+          OpenAI).
+          <br />
+          - La gestion des cookies.
+          <br />
+          - <strong>Shadcn</strong> comme librairie principale.
+          <br />
+          - De l'<strong>IA </strong>pour permettre au User de créer ses propres
+          formulaires avec un simple promt.
         </p>
+
+        <!-- Image Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+          <!-- Image 1 -->
+          <div class="col">
+            <img
+              src="./images/3rdProject/croco.png"
+              alt="Crocodile Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/3rdProject/croco.png')"
+            />
+          </div>
+          <!-- Image 2 -->
+          <div class="col">
+            <img
+              src="./images/3rdProject/quizz.png"
+              alt="Quiz Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/3rdProject/quizz.png')"
+            />
+          </div>
+          <!-- Image 3 -->
+          <div class="col">
+            <img
+              src="./images/3rdProject/form.png"
+              alt="Form Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/3rdProject/form.png')"
+            />
+          </div>
+          <!-- Image 4 -->
+          <div class="col">
+            <img
+              src="./images/3rdProject/croco2.png"
+              alt="Host Page Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/3rdProject/croco2.png')"
+            />
+          </div>
+
+          <div class="col">
+            <img
+              src="./images/3rdProject/croco3.png"
+              alt="Host Page Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/3rdProject/croco3.png')"
+            />
+          </div>
+
+          <div class="col">
+            <img
+              src="./images/3rdProject/hostPage.png"
+              alt="Host Page Image"
+              class="img-fluid rounded shadow"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage('./images/3rdProject/hostPage.png')"
+            />
+          </div>
+        </div>
       </div>
-    </section>
 
-    <div style="height: 100px"></div>
-    <!-- TESTIMONIAL -->
-    <!-- <section class="testimonials section-padding" id="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="owl-carousel owl-theme" id="testimonials-carousel">
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img
-                      src="images/testimonials/testimonial-image01.jpg"
-                      class="img-fluid"
-                      alt="testimonials image"
-                    />
-                  </div>
-
-                  <div class="testimonials-info">
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem.
-                    </p>
-
-                    <h6 class="mb-0">Ben</h6>
-                    <span>Art Director</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img
-                      src="images/testimonials/testimonial-image03.jpg"
-                      class="img-fluid"
-                      alt="testimonials image"
-                    />
-                  </div>
-
-                  <div class="testimonials-info">
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem.
-                    </p>
-
-                    <h6 class="mb-0">Jen</h6>
-                    <span>Product Manager</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img
-                      src="images/testimonials/testimonial-image04.jpg"
-                      class="img-fluid"
-                      alt="testimonials image"
-                    />
-                  </div>
-
-                  <div class="testimonials-info">
-                    <h6 class="mb-0">Wilson</h6>
-                    <span>Web Developer</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img
-                      src="images/testimonials/testimonial-image04.jpg"
-                      class="img-fluid"
-                      alt="testimonials image"
-                    />
-                  </div>
-
-                  <div class="testimonials-info">
-                    <h6 class="mb-0">Wilson</h6>
-                    <span>Web Developer</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img
-                      src="images/testimonials/testimonial-image04.jpg"
-                      class="img-fluid"
-                      alt="testimonials image"
-                    />
-                  </div>
-
-                  <div class="testimonials-info">
-                    <h6 class="mb-0">Wilson</h6>
-                    <span>Web Developer</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img
-                      src="images/testimonials/testimonial-image04.jpg"
-                      class="img-fluid"
-                      alt="testimonials image"
-                    />
-                  </div>
-
-                  <div class="testimonials-info">
-                    <h6 class="mb-0">Wilson</h6>
-                    <span>Web Developer</span>
-                  </div>
-                </div>
-              </div>
+      <!-- Modal for Image Preview -->
+      <div
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                id="modalImage"
+                class="img-fluid rounded shadow"
+                alt="Preview"
+              />
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+
+      <!-- JavaScript to update the modal image -->
+      <script>
+        function showImage(src) {
+          document.getElementById('modalImage').src = src;
+        }
+      </script>
+    </section>
+
+    <div style="height: 100px"></div>
 
     <hr class="divider" />
 
