@@ -116,6 +116,16 @@ https://www.tooplate.com/view/2120-ben-resume
     transform: rotate(-25deg);
   }
 
+  .custom-text-h4{
+    font-size: 25px;
+  }
+  .custom-mt{
+    margin-top: 100px;
+  }
+
+    .custom-mb{
+    margin-bottom: 100px;
+  }
 
   /* CUSTOM BUTTON */
   .custom-btn {
